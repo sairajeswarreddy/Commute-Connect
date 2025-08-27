@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commute Connect</title>
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.login-btn {
+    background: #ffd700;
+    color: #333;
+    margin-right: 80px;
+    
+    
+}
+
+.login-btn:hover {
+    background: white;
+    color: #4e54c8;
+}
+
+.hero-content {
+    padding: 0 20px;
+    max-width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    margin: 15px;
+    padding: 15px 30px;
+}
+
+.primary-btn {
+    background: #ffd700;
+    color: #333;
+}
+
+.primary-btn:hover {
+    background: white;
+    color: #4e54c8;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 2px solid #ffd700;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #4e54c8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 50px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 8px;
+        display: none;
+    }
+
+    .navbar:hover .nav-links {
+        display: flex;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">CommuteConnect</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Find a Ride</a></li>
+                <li><a href="#">Offer a Ride</a></li>
+                <li><a href="#">Myrides</a></li>
+            </ul>
+            
+            <a href="login.php" class="btn login-btn">Login</a>
+        
+        </nav>
+        <div class="hero-content">
+            <h1>Share Rides, Save the Planet</h1>
+            <p>Join thousands of users who are making carpooling simple, affordable, and sustainable.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn primary-btn">Find a Ride</a>
+                <a href="" class="btn secondary-btn">Offer a Ride</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
